@@ -2,9 +2,9 @@
 
 ### Installation
    
-    $ git clone https://github.com/mohammad2700/leagues.git
+    $ git clone https://github.com/developer2700/leagues.git
     $ cd leagues
-    $ cp .env.example .env # and enter databse details
+    $ cp .env.example .env # and enter database details
     $ composer install
     $ npm install
     $ npm run dev
