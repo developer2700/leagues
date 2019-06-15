@@ -1,0 +1,1 @@
+INSERT INTO leagues (league_id, name, nowWeek, deleted_at, created_at, updated_at) VALUES (1, 'Premier League', '1', null, '2019-06-15 08:36:25', null);

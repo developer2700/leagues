@@ -1,0 +1,1 @@
+INSERT INTO base_settings (base_setting_id, parent_id, title, description, deleted_at, created_at, updated_at) VALUES (1, null, 'event_type', null, null, '2019-06-15 08:32:22', null);

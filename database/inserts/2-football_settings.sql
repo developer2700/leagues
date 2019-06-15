@@ -1,0 +1,2 @@
+INSERT INTO settings (setting_id, base_setting_id, parent_id, title, description, deleted_at, created_at, updated_at) VALUES (1, 1, null, 'host gol', null, null, '2019-06-15 08:33:43', null);
+INSERT INTO settings (setting_id, base_setting_id, parent_id, title, description, deleted_at, created_at, updated_at) VALUES (2, 1, null, 'guest gol ', null, null, '2019-06-15 08:33:45', null);

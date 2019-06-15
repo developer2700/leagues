@@ -1,0 +1,1457 @@
+{
+	"info": {
+		"_postman_id": "49b3a849-ea85-4d8b-a781-2381a49d2c7e",
+		"name": "Insider",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Football",
+			"item": [
+				{
+					"name": "version 1",
+					"item": [
+						{
+							"name": "BaseSettings",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/baseSettings",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"baseSettings"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/baseSetting/7",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"baseSetting",
+												"7"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "set",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"parent_id\":null,\n\t\"title\":\"match rond type\",\n\t\"description\":\"\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/baseSetting",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"baseSetting"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"parent_id\":null,\n\t\"title\":\"match rond type\",\n\t\"description\":\"\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/baseSetting/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"baseSetting",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/baseSetting/9",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"baseSetting",
+												"9"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Settings",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/settings",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"settings"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/setting/7",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"setting",
+												"7"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "set",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"base_setting_id\":1,\n\t\"parent_id\":null,\n\t\"title\":\"match rond type\",\n\t\"description\":\"\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/setting",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"setting"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"base_setting_id\":1,\n\t\"parent_id\":null,\n\t\"title\":\"match rond type\",\n\t\"description\":\"\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/setting/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"setting",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/setting/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"setting",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Players",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/players",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"players"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/player/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"player",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "set",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\":\"test player\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/player",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"player"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"team_id\":2,\n\t\"name\":\"test player1\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/player/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"player",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/player/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"player",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Teams",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/teams",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"teams"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/team/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"team",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "set",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\":\"test team\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/team",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"team"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\":\"test\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/team/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"team",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/team/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"team",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Contracts",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/contracts",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"contracts"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/contract/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"contract",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "set",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"player_id\":1,\n\t\"team_id\":1,\n\t\"start_at\":\"2019-03-02 13:24:05\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/contract",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"contract"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"player_id\":1,\n\t\"team_id\":1,\n\t\"start_at\":\"2019-03-02 13:24:05\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/contract/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"contract",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/contract/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"contract",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Leagues",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/leagues",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"leagues"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/league/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"league",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "set",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\":\"facup\",\n\t\"nowWeek\":\"null\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/league",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"league"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\":\"facup\",\n\t\"nowWeek\":\"0\"\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/league/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"league",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/league/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"league",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "LeaguesTeams",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/leagueTeams",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"leagueTeams"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/leagueTeam/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"leagueTeam",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "set",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"league_id\":2,\n\t\"team_id\":1\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/leagueTeam",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"leagueTeam"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"league_id\":2,\n\t\"team_id\":1\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/leagueTeam/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"leagueTeam",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/league/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"league",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Weeks",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/weeks",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"weeks"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/week/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"week",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "set",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\":\"1\",\n\t\"league_id\":2\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/week",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"week"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\":\"1\",\n\t\"league_id\":2\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/week/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"week",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/week/2",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"week",
+												"2"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "70aee91d-7663-4da1-b25e-d2527ab0631f",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "bfd861ec-97ab-4265-bbbd-878df4ac6716",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Matches",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/matches",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"matches"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/match/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"match",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "set",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"week_id\":1,\n\t\"host_team_id\":1,\n\t\"guest_team_id\":2,\n\t\"host_result\":2,\n\t\"guest_result\":2\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/match",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"match"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"week_id\":1,\n\t\"host_team_id\":4,\n\t\"guest_team_id\":11,\n\t\"host_result\":2,\n\t\"guest_result\":1\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/match/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"match",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/match/2",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"match",
+												"2"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "70aee91d-7663-4da1-b25e-d2527ab0631f",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "bfd861ec-97ab-4265-bbbd-878df4ac6716",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Events",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/events",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"events"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/event/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"event",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "set",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"match_id\":1,\n\t\"event_type_id\":2,\n\t\"player_id\":1,\n\t\"minute\":2\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/event",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"event"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"match_id\":1,\n\t\"event_type_id\":2,\n\t\"player_id\":1,\n\t\"minute\":2\n}"
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/event/1",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"event",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_football_api_v1}}/event/2",
+											"host": [
+												"{{base_football_api_v1}}"
+											],
+											"path": [
+												"event",
+												"2"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "70aee91d-7663-4da1-b25e-d2527ab0631f",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "bfd861ec-97ab-4265-bbbd-878df4ac6716",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								}
+							],
+							"_postman_isSubFolder": true
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base_football_api_v1}}/test",
+							"host": [
+								"{{base_football_api_v1}}"
+							],
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
